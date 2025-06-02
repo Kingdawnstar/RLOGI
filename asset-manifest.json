@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/RLOGI/static/css/main.caaf6c70.css",
+    "main.js": "/RLOGI/static/js/main.7a3c7154.js",
+    "static/js/453.c9c357a5.chunk.js": "/RLOGI/static/js/453.c9c357a5.chunk.js",
+    "static/media/Homebg.png": "/RLOGI/static/media/Homebg.e0f212fbe05881c0cbf0.png",
+    "static/media/logo2.png": "/RLOGI/static/media/logo2.8c66b8f971f6ddeae900.png",
+    "index.html": "/RLOGI/index.html",
+    "main.caaf6c70.css.map": "/RLOGI/static/css/main.caaf6c70.css.map",
+    "main.7a3c7154.js.map": "/RLOGI/static/js/main.7a3c7154.js.map",
+    "453.c9c357a5.chunk.js.map": "/RLOGI/static/js/453.c9c357a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caaf6c70.css",
+    "static/js/main.7a3c7154.js"
+  ]
+}
