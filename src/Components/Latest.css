@@ -1,0 +1,125 @@
+.Latest{
+    padding: 30px;
+}
+
+.Latest .Lat-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Latest .Lat-view{
+    display: flex;
+    cursor: pointer;
+}
+
+.Latest .Lat-view img{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    margin-top: 28px;
+}
+
+.Latest .Lat-view p{
+    padding: 0 12px;
+    font-size: 11px;
+    width: 150px;
+    margin-top: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #E8618CFF;
+}
+
+.Latest .Lat-top h3{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.Latest .Articles{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    gap: 20px;
+}
+
+.Latest .Article{
+    width: 300px;
+    height: 370px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 0 1px 1px #ccc;
+}
+
+.Latest img{
+    width: 380px;
+    height: 150px;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.Latest .top-writeup{
+    font-size: 0.6rem;
+    color: #E8618CFF;
+    padding: 6px 7px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    height: 28px;
+    font-weight: bold;
+    border: 1px solid #E8618CFF;
+}
+
+.Latest .art-cap{
+    font-weight: 600;
+    font-size: 14px;
+    color: #242524FF;
+    margin-left: 20px;
+}
+
+.Latest .exp{
+    font-size: 10px;
+    width: 290px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 5px;
+   color: #8c8D8BFF;
+    line-height: 15px;
+}
+
+.Latest .artdet{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-top: 10px;
+    color: #8c8D8BFF;
+    gap: 2rem;
+}
+
+.Latest .artdet p{
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+}
+
+.Latest .read{
+    display: flex;
+}
+
+.Latest .read img{
+    width: 13px;
+    height: 13px;
+    object-fit: cover;
+    margin-top: 38px;
+    line-height: 20px;
+}
+
+.Latest .readmore{
+    padding: 0 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #E8618CFF;
+    margin-top: 30px;
+    margin-left: 20px;
+}
