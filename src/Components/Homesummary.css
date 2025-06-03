@@ -1,0 +1,67 @@
+.Homesummary{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px;
+}
+
+.sum-right{
+    width: 800px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.sum-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sum-left{
+    width: 80%;
+    margin-right: 50px;
+}
+
+.sum-para h3{
+    font-size: 0.85rem;
+}
+
+.sum-para p{
+    font-size: 0.82rem;
+    margin-top: 10px;
+}
+
+.first-para, .second-para{
+    margin-top: 20px;
+    
+}
+
+.left-bottom{
+    display: flex;
+    margin-top: 40px;
+    
+}
+
+.left-bottom .transform, .community{
+    display: flex;
+    width: 40%;
+}
+
+.left-bottom .thick{
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.left-bottom p{
+    font-size: 0.7rem;
+}
+
+.left-bottom img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #E8618C1A;
+}
