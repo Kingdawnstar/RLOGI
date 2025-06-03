@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.css": "/RLOGI/static/css/main.caaf6c70.css",
-    "main.js": "/RLOGI/static/js/main.7a3c7154.js",
+    "main.css": "/RLOGI/static/css/main.86bc6c6d.css",
+    "main.js": "/RLOGI/static/js/main.0532f7ad.js",
     "static/js/453.c9c357a5.chunk.js": "/RLOGI/static/js/453.c9c357a5.chunk.js",
     "static/media/Homebg.png": "/RLOGI/static/media/Homebg.e0f212fbe05881c0cbf0.png",
+    "static/media/sumpic.png": "/RLOGI/static/media/sumpic.a16aee837a5e61e5ec9b.png",
+    "static/media/mount.png": "/RLOGI/static/media/mount.21cfd28d84eb5dff6501.png",
+    "static/media/faceboard.png": "/RLOGI/static/media/faceboard.5ff2cbd3a16eeaa7c15f.png",
+    "static/media/mas.png": "/RLOGI/static/media/mas.13015186832f653ba28f.png",
+    "static/media/chessm.png": "/RLOGI/static/media/chessm.ffa9d1bd0f0e9158a9fe.png",
+    "static/media/inno.png": "/RLOGI/static/media/inno.036f986d1936d9158492.png",
+    "static/media/team.png": "/RLOGI/static/media/team.31bbb8829adfbc009d79.png",
+    "static/media/eq.png": "/RLOGI/static/media/eq.35802f10020d62a2b065.png",
+    "static/media/cliff.png": "/RLOGI/static/media/cliff.0aaa395eba9a7cb5bf8d.png",
     "static/media/logo2.png": "/RLOGI/static/media/logo2.8c66b8f971f6ddeae900.png",
+    "static/media/dec.png": "/RLOGI/static/media/dec.dd5707eac146f257a211.png",
     "index.html": "/RLOGI/index.html",
-    "main.caaf6c70.css.map": "/RLOGI/static/css/main.caaf6c70.css.map",
-    "main.7a3c7154.js.map": "/RLOGI/static/js/main.7a3c7154.js.map",
+    "main.86bc6c6d.css.map": "/RLOGI/static/css/main.86bc6c6d.css.map",
+    "main.0532f7ad.js.map": "/RLOGI/static/js/main.0532f7ad.js.map",
     "453.c9c357a5.chunk.js.map": "/RLOGI/static/js/453.c9c357a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.caaf6c70.css",
-    "static/js/main.7a3c7154.js"
+    "static/css/main.86bc6c6d.css",
+    "static/js/main.0532f7ad.js"
   ]
 }
