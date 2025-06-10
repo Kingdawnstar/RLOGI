@@ -1,70 +1,167 @@
-.Navbar{
+.Navbar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between; /* Space between left and right */
     align-items: center;
-    margin-top: 5px;
     margin-bottom: 20px;
-    height: 25px;
-    padding-top: 12px;
+    height: 60px; /* Increased height for better touch targets */
+    padding: 0 20px; /* Adjust padding for side margins */
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.Navbar-left{
+.Navbar-left {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 20px;
+    align-items: center; /* Center vertically */
 }
 
-.Navbar-left .nav-links{
+.Navbar-left .nav-links {
     display: flex;
-    font-size: 0.75rem;
+    font-size: 0.85rem; /* Increased font size for better readability */
     margin-left: 25px;
-    margin-top: 10px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav-links p{
+.nav-links a{
     margin-left: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    color: #474747e0;
+    
 }
 
-.Navbar-left .nav-img{
+.nav-links a:hover{
+    color: #636ae8ff;
+}
+
+.nav-links .active-link{
+    color: #636ae8ff;
+}
+
+.Navbar-left .nav-img {
     height: 40px;
     width: 100px;
 }
 
-.nav-img img{
+.nav-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: none;
 }
 
-.Navbar-right{
+.Navbar-right {
     display: flex;
-    justify-content: flex-end;
-    width: 80px;
-    margin-left: 65%;
+    align-items: center; /* Center vertically */
 }
 
-.Navbar-right .search{
+.Navbar-right .search {
     border: 1px solid #ccc;
     display: flex;
     border-radius: 5px;
     padding: 5px 12px;
+    align-items: center; /* Center items in search bar */
 }
 
-.Navbar-right .search-img{
+.Navbar-right .search-img {
     width: 15px;
     height: 18px;
-   object-fit: cover;
-    margin-top: 5px;
-    margin-right: 10px;
+    object-fit: cover;
+    margin-right: 5px; /* Adjusted margin */
 }
 
-.search input{
+.search input {
     border: none;
     font-size: 0.75rem;
     outline: none;
-    width: 250px;
+    width: 200px; /* Default width for larger screens */
     height: 25px;
 }
 
+.menu-button {
+    display: none; /* Hide the menu button by default */
+    font-size: 24px; /* Size of the menu icon */
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px; /* Adjusted margin */
+}
+
+@media (max-width: 950px) {
+    .Navbar-left .nav-links {
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        top: 60px; /* Adjusted for navbar height */
+        left: 0;
+        background: #fff;
+        width: 100%; 
+        text-align: center;
+        z-index: 10; 
+        font-size: 0.98rem;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        gap: 1rem; /* Space between links */
+    }
+
+    .nav-links a{
+        color: #E8618C4D;
+        background: #FFF;
+        padding: 10px;
+       
+    }
+
+    .nav-links.active .active-link{
+         color: #fff; 
+        cursor: pointer;
+        border-radius: 6px;
+        background: #E8618C4D;
+        padding: 10px;
+        text-align: center; /* Center text */
+    }
+
+    .Navbar-left .nav-links.active {
+        display: flex; /* Show links when active */
+        padding: 10px; /* Reduced padding */
+    }
+
+    .Navbar-left .nav-links.active p:hover {
+        color: #fff; 
+        cursor: pointer;
+        border-radius: 6px;
+        background: #E8618C4D;
+        padding: 10px;
+        text-align: center; /* Center text */
+    }
+
+    .menu-button {
+        display: block; /* Show the menu button */
+    }
+
+    .Navbar-right .search {
+        margin-right: 8px; /* Adjust margin on smaller screens */
+        flex-grow: 0; /* Prevent search bar from growing */
+    }
+
+    .search input {
+        width: 150px; /* Fixed width for search input */
+    }
+}
+
+@media (max-width: 480px) {
+    .search input {
+        width: 100px; /* Further reduce width for very small screens */
+    }
+
+    .Navbar-right {
+        justify-content: flex-start; /* Align search and button to the left */
+    }
+
+    .Navbar-left .nav-links {
+        top: 50px; /* Adjusted for smaller screens */
+    }
+}

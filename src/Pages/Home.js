@@ -5,6 +5,8 @@ import Homesummary from '../Components/Homesummary';
 import Featured from '../Components/Featured';
 import Elevate from '../Components/Elevate';
 import Latest from '../Components/Latest';
+import Unlock from '../Components/Unlock';
+
 
 const Home = () => {
   return (
@@ -14,6 +16,7 @@ const Home = () => {
       <div className='Feat'><Featured /></div>
       <div className='Ele'><Elevate /></div>
       <div className='Lat'><Latest /></div>
+      <div className='Unl'><Unlock /></div>
     </div>
   )
 }

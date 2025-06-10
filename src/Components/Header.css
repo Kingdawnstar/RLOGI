@@ -60,7 +60,60 @@
     color: #4B0082; /* Indigo text color */
 }
 
-.learn {
+.explore:hover {
+    background-color: #4B0082; /* White background for explore button */
+    color: #fff; /* Indigo text color */
+}
+
+.learn:hover {
     background-color: #4B0082; /* Indigo background for learn button */
     color: #ffffff; /* White text color */
+}
+
+.learn {
+    background-color: #fff ; /* Indigo background for learn button */
+    color: #4B0082; /* White text color */
+}
+
+@media (max-width: 950px) {
+    .big-text h1 {
+        font-size: 1.5em; /* Reduce font size */
+        opacity: 0.8;
+    }
+
+    .paragraph p {
+        font-size: 0.8em; /* Reduce font size */
+        opacity: 0;
+    }
+
+    .write-up {
+        width: 65%; /* Increase width on smaller screens */
+        
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+
+    }
+
+   
+    .explore, .learn {
+        padding: 5px 10px;
+        margin-right: 5px; /* Reset margin for vertical stacking */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .big-text h1 {
+        font-size: 1.2em; /* Further reduce font size */
+    }
+
+    .paragraph p {
+        font-size: 0.7em; /* Further reduce paragraph font size */
+    }
+
+    .write-up {
+        padding: 10px; /* Reduce padding */
+    }
 }

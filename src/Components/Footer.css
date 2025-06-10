@@ -1,0 +1,113 @@
+.Footer{
+    padding: 20px 20px;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+}
+
+.foot-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.foot-top img{
+    width: 110px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.foot-top p{
+    font-size: 12px;
+    font-weight: 600;
+    color: #242524FF;
+    margin-top: 20px;
+}
+
+.foot-bot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.foot-bot .lang{
+    color: #8C8D8BFF;
+    background: #F7F7F7FF;
+    border-radius: 6px;
+    border-color: #EBEBEAFF;
+    border-style: solid;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 2px 15px;
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+} 
+
+.foot-bot .des{
+    font-size: 10px;
+    color: #8C8D8BFF;
+    font-weight: 400;
+    width: 20%;
+    margin-left: 38px;
+}
+
+.foot-bot .des span{
+    border: 1px solid black;
+    border-radius: 50%;
+    border-color: #8C8D8BFF;
+    margin-right: 5px;
+    padding: 0 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.foot-bot-img{
+    width: 30px;
+    display: flex;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 950px) {
+    .foot-top p {
+        font-size: 0.7rem; /* Smaller font size for paragraph */
+    }
+
+    .foot-bot .lang {
+        width: 16%; /* Allow for flexible width on smaller screens */
+        margin: 5px; /* Adjust margin */
+        font-size: 0.7rem;
+    }
+
+    .foot-bot .des {
+        font-size: 0.5rem; /* Smaller font size for description */
+        width: 40%;
+        margin-left: 15px;
+    }
+
+    .foot-bot-img{
+        flex-direction: column;
+        width: 35px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .foot-top p {
+        font-size: 0.6rem; /* Further reduce font size */
+    }
+
+    .foot-bot .lang {
+        font-size: 0.8rem; /* Smaller font size for language buttons */
+    }
+
+    .foot-bot .des {
+        font-size: 0.5rem; /* Further reduce font size for description */
+    }
+}

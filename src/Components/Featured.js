@@ -69,6 +69,23 @@ const Featured = () => {
             <img src={read} alt="" />
           </div>
         </div>
+         <div className="Article">
+          <img src={mount} alt="" />
+          <p className="top-writeup">Personal Growth</p>
+          <p className="art-cap">The Power of a Growth Mindset</p>
+          <p className="exp">
+            Discover how shifting your perspective can unlock unparallel
+            potential and resilience in both personal and professional life
+          </p>
+          <div className="artdet">
+            <p>Dr. Emily Carter</p>
+            <p>Oct 28, 2023</p>
+          </div>
+          <div className="read">
+            <p className="readmore">Read More</p>
+            <img src={read} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );

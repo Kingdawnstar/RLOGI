@@ -1,66 +1,69 @@
-.Latest{
-    padding: 30px;
+.Latest {
+    padding: 20px;
 }
 
-.Latest .Lat-top{
+.Latest .Lat-top {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Center items vertically */
 }
 
-.Latest .Lat-view{
+.Latest .Lat-view {
     display: flex;
     cursor: pointer;
 }
 
-.Latest .Lat-view img{
+.Latest .Lat-view img {
     width: 15px;
     height: 15px;
     object-fit: cover;
     margin-top: 28px;
 }
 
-.Latest .Lat-view p{
+.Latest .Lat-view p {
     padding: 0 12px;
-    font-size: 11px;
-    width: 150px;
-    margin-top: 20px;
+    font-size: 12px; /* Slightly larger font size */
     line-height: 22px;
     font-weight: bold;
     color: #E8618CFF;
+    margin-top: 20px;
 }
 
-.Latest .Lat-top h3{
-    font-size: 36px;
+.Latest .Lat-top h3 {
+    font-size: 2em; /* Responsive font size */
     font-weight: 700;
 }
 
-.Latest .Articles{
+.Latest .Articles {
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr) ;
-    gap: 20px;
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Automatic column adjustment */
+    gap: 20px; /* Space between articles */
+    justify-content: center; /* Center articles */
 }
 
-.Latest .Article{
-    width: 300px;
-    height: 370px;
+.Latest .Article {
+    height: auto; /* Auto height */
     border-radius: 5px;
     overflow: hidden;
-    /* border: 1px solid #ccc; */
     box-shadow: 0 0 1px 1px #ccc;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content */
 }
 
-.Latest img{
-    width: 380px;
-    height: 150px;
+.Latest img {
+    width: 100%; /* Full width for responsiveness */
+    height: 180px; /* Fixed height for consistency */
     border-radius: 5px 5px 0 0;
     object-fit: cover;
 }
 
-.Latest .top-writeup{
-    font-size: 0.6rem;
+.Latest .top-writeup {
+    font-size: 0.85em; /* Slightly larger font size */
     color: #E8618CFF;
-    padding: 6px 7px;
+    padding-bottom: 8px;
+    padding-top: 8px;
     margin-top: 10px;
     margin-left: 20px;
     margin-bottom: 10px;
@@ -71,55 +74,98 @@
     border: 1px solid #E8618CFF;
 }
 
-.Latest .art-cap{
+.Latest .art-cap {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1em; /* Larger font size for better readability */
     color: #242524FF;
     margin-left: 20px;
 }
 
-.Latest .exp{
-    font-size: 10px;
-    width: 290px;
+.Latest .exp {
+    font-size: 0.7em; /* Responsive font size */
+    width: 90%; /* Use percentage for responsiveness */
     font-weight: 400;
     margin-left: 20px;
     margin-top: 5px;
-   color: #8c8D8BFF;
-    line-height: 15px;
-}
-
-.Latest .artdet{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 40px;
-    margin-top: 10px;
     color: #8c8D8BFF;
-    gap: 2rem;
+    line-height: 18px; /* Adjusted line height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center; /* Center the text */
 }
 
-.Latest .artdet p{
-    font-size: 10px;
-    line-height: 12px;
+.Latest .artdet {
+    display: flex;
+    justify-content: center; /* Center the details */
+    margin-top: 10px;
+    color: #000;
+    gap: 1rem; /* Adjusted gap for clarity */
+}
+
+.Latest .artdet p {
+    font-size: 0.6em; /* Responsive font size */
+    line-height: 14px; /* Adjusted line height */
     font-weight: 400;
 }
 
-.Latest .read{
+.Latest .read {
     display: flex;
+    cursor: pointer;
 }
 
-.Latest .read img{
-    width: 13px;
-    height: 13px;
+.Latest .read img {
+    width: 15px; /* Adjusted for better scaling */
+    height: 15px; /* Consistent height */
     object-fit: cover;
-    margin-top: 38px;
-    line-height: 20px;
+    margin-top: 19px; /* Adjusted margin */
 }
 
-.Latest .readmore{
+.Latest .readmore {
     padding: 0 12px;
-    font-size: 12px;
+    font-size: 0.75em; /* Responsive font size */
     line-height: 20px;
     color: #E8618CFF;
-    margin-top: 30px;
+    margin-top: 10px; /* Adjusted margin */
     margin-left: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 950px) {
+
+    .Latest .top-writeup{
+        font-size: 0.7em;
+    }
+    .Latest .Lat-top h3 {
+        font-size: 1.6em; /* Smaller heading size */
+    }
+
+    .Latest .art-cap {
+        font-size: 0.85em; /* Smaller font size for article caption */
+    }
+
+    .Latest .exp {
+        font-size: 0.75em; /* Smaller font size for experience text */
+    }
+}
+
+@media (max-width: 480px) {
+    .Latest .Lat-top h3 {
+        font-size: 1.5em; /* Further reduce heading size */
+    }
+
+    .Latest .artdet p {
+        font-size: 0.7em; /* Smaller font size for article details */
+    }
+
+    .Latest .Articles {
+        justify-content: center; /* Center articles */
+    }
+
+    .Latest .Article {
+        width: 90%; /* Adjust width for mobile */
+        margin: 0 auto; /* Center the article */
+    }
+
+    .Latest .readmore {
+        font-size: 0.65em; /* Smaller read more font size */
+    }
 }

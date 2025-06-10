@@ -1,0 +1,76 @@
+.Blogs {
+    margin-top: 30px;
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* Three items per row */
+    gap: 10px; /* Space between articles */
+    justify-items: center; /* Center items in each grid cell */
+    padding: 10px;
+    max-height: 1000px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.Blogs .Blog {
+    width: 100%; /* Full width on small screens */
+    max-width: 400px; /* Max width for larger screens */
+    height: auto; /* Auto height for responsive images */
+    border-radius: 5px;
+    padding-bottom: 20px; /* Space for content */
+    box-shadow: 0 0 1px 1px #ccc;
+    margin-bottom: 20px; /* Space between articles */
+}
+
+.Blogs .Blog img {
+    width: 100%; /* Full width */
+    height: 192px;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.Blogs .Blog .top-writeup {
+    font-size: 0.65rem;
+    color: #E8618CFF;
+    padding: 6px 7px;
+    margin: 10px 20px; /* Margin for top-writeup */
+    border-radius: 15px;
+    width: fit-content;
+    background: #e8618c1a;
+    height: 28px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+.Blogs .Blog .top-writeup:hover {
+    background: #e8618cff;
+    color: white;
+}
+
+.Blogs .Blog .art-cap {
+    font-weight: 600;
+    font-size: 20px;
+    color: #242524FF;
+    margin-left: 20px;
+}
+
+.Blogs .Blog .exp {
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin: 5px 20px; /* Margin for exp */
+    color: #8c8D8BFF;
+    line-height: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 950px) {
+    .Blogs {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .Blogs {
+        grid-template-columns: 1fr; /* One item per row */
+    }
+}

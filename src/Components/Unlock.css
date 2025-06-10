@@ -1,0 +1,119 @@
+.Unlock {
+    background: linear-gradient(90deg, #E8618c0D 0%, #E8618C1A 50%, #E8618C0D 100%);
+    height: auto; /* Change to auto for flexibility */
+    padding: 5% 10px; /* Simplified padding */
+}
+
+.unlock-box {
+    display: flex;
+    flex-direction: column; /* Stack items on smaller screens */
+    justify-content: center;
+    margin-left: 40px;
+    align-items: center; /* Center items */
+    background-color: white;
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 1320px; /* Max width for larger screens */
+    padding: 2%;
+    border-radius: 12px;
+}
+
+.unlock-box .unlock-left {
+    width: 100%; /* Full width for the left section */
+    text-align: center; /* Center text */
+}
+
+.unlock-left h3 {
+    font-size: 2em; /* Responsive font size */
+}
+
+.unlock-left p {
+    font-size: 1rem; /* Responsive font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    font-weight: 400;
+    color: #8C8D8BFF;
+    margin-top: 20px;
+}
+
+.unlock-right {
+    display: flex;
+    justify-content: center; /* Center items on smaller screens */
+    margin-top: 20px; /* Space between sections */
+}
+
+.unlock-right input {
+    width: 80%; /* Use percentage for responsiveness */
+    max-width: 250px; /* Max width for input */
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 0.9rem; /* Responsive font size */
+    outline: none;
+    border-color: #EBEBEAFF;
+    border-radius: 8px;
+}
+
+.unlock-right button {
+    width: 80%; /* Use percentage for responsiveness */
+    max-width: 190px; /* Max width for button */
+    height: 40px;
+    padding: 0 12px;
+    align-items: center;
+    background: #636AE8FF;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
+    color: white;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.unlock-right button:hover{
+    width: 80%; /* Use percentage for responsiveness */
+    max-width: 190px; /* Max width for button */
+    height: 40px;
+    padding: 0 12px;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
+    color: #636AE8FF;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 950px) {
+
+    .unlock-box{
+        margin-left: 10px;
+    }
+
+    .unlock-left h3 {
+        font-size: 1.3em; /* Smaller heading size */
+    }
+
+    .unlock-left p {
+        font-size: 0.65rem; /* Smaller font size for paragraph */
+    }
+
+    .unlock-right input {
+        width: 100%; /* Full width on smaller screens */
+        font-size: 0.7rem
+    }
+
+    .unlock-right button {
+        width: 60%; /* Full width on smaller screens */
+        margin-left: 5px; /* Reset margin for button */
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .unlock-left h3 {
+        font-size: 1.5em; /* Further reduce heading size */
+    }
+
+    .unlock-left p {
+        font-size: 0.8rem; /* Further reduce paragraph font size */
+    }
+}

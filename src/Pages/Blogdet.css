@@ -1,0 +1,4 @@
+.Blogdet .upper{
+    display: flex;
+    justify-content: space-between;
+}

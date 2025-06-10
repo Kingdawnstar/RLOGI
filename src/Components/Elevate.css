@@ -1,24 +1,26 @@
-.Elevate{
+.Elevate {
     display: flex;              
     justify-content: center;     
     align-items: center;         
+    padding: 20px; /* Add padding around the container */
 }
 
-.Elevate .elevator{
+.Elevate .elevator {
     background: #E8618C1A;
-   display: flex;                
+    display: flex;                
     flex-direction: column;    
     justify-content: center;      
     align-items: center;          
     text-align: center;           
     padding: 20px;    
-    width: 1300px;     
-    height: 350px;          
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 1300px; /* Max width for larger screens */
+    height: auto; /* Auto height for flexibility */
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.elevator img{
+.elevator img {
     border: 3px solid #E8618CFF;
     width: 80px;
     height: 80px;
@@ -27,26 +29,27 @@
     margin-bottom: 20px;
 }
 
-.elevator h3{
-    font-size: 30px;
-    width: 600px;
+.elevator h3 {
+    font-size: 2em; /* Responsive font size */
+    width: 100%; /* Full width */
     font-weight: 700;
 }
 
-.elevator p{
+.elevator p {
     margin-top: 10px;
-    width: 700px;
-    font-size: 14px;
-    line-height: 22px;
+    width: 100%; /* Full width */
+    font-size: 1em; /* Responsive font size */
+    line-height: 1.5; /* Adjust line height for readability */
     font-weight: 400;
     color: #8C8D8BFF;
 }
 
-.elevator button{
-    width: 350px;
+.elevator button {
+    width: 80%; /* Use percentage for responsiveness */
+    max-width: 350px; /* Max width for button */
     height: 44px;
-    margin: 20px;
-    font-size: 13px;
+    margin: 20px 0; /* Vertical margin for spacing */
+    font-size: 1em; /* Responsive font size */
     font-weight: 600;
     cursor: pointer;
     color: white;
@@ -54,4 +57,48 @@
     border: none;
     border-radius: 6px;
     padding: 5px 12px;
+}
+
+.elevator button:hover{
+    width: 80%; /* Use percentage for responsiveness */
+    max-width: 350px; /* Max width for button */
+    height: 44px;
+    margin: 20px 0; /* Vertical margin for spacing */
+    font-size: 1em; /* Responsive font size */
+    font-weight: 600;
+    cursor: pointer;
+    color: #636AE8FF;
+    background: #fff;
+    border: 1px solid #636AE8FF;
+    border-radius: 6px;
+    padding: 5px 12px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .elevator h3 {
+        font-size: 1.5em; /* Smaller font size for h3 */
+    }
+
+    .elevator p {
+        font-size: 0.9em; /* Smaller font size for paragraph */
+    }
+
+    .elevator button {
+        font-size: 0.9em; /* Smaller button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .elevator h3 {
+        font-size: 1.3em; /* Further reduce font size for h3 */
+    }
+
+    .elevator p {
+        font-size: 0.8em; /* Further reduce font size for paragraph */
+    }
+
+    .elevator button {
+        font-size: 0.8em; /* Further reduce button font size */
+    }
 }
