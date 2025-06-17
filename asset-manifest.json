@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RLOGI/static/css/main.d3fbd080.css",
-    "main.js": "/RLOGI/static/js/main.82ea9d9b.js",
+    "main.css": "/RLOGI/static/css/main.99c0e03c.css",
+    "main.js": "/RLOGI/static/js/main.f80017c4.js",
     "static/js/453.c9c357a5.chunk.js": "/RLOGI/static/js/453.c9c357a5.chunk.js",
     "static/media/Contact.jpg": "/RLOGI/static/media/Contact.87dd00b0a666f17dc549.jpg",
     "static/media/Homebg.png": "/RLOGI/static/media/Homebg.e0f212fbe05881c0cbf0.png",
@@ -20,12 +20,12 @@
     "static/media/logo2.png": "/RLOGI/static/media/logo2.8c66b8f971f6ddeae900.png",
     "static/media/dec.png": "/RLOGI/static/media/dec.dd5707eac146f257a211.png",
     "index.html": "/RLOGI/index.html",
-    "main.d3fbd080.css.map": "/RLOGI/static/css/main.d3fbd080.css.map",
-    "main.82ea9d9b.js.map": "/RLOGI/static/js/main.82ea9d9b.js.map",
+    "main.99c0e03c.css.map": "/RLOGI/static/css/main.99c0e03c.css.map",
+    "main.f80017c4.js.map": "/RLOGI/static/js/main.f80017c4.js.map",
     "453.c9c357a5.chunk.js.map": "/RLOGI/static/js/453.c9c357a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3fbd080.css",
-    "static/js/main.82ea9d9b.js"
+    "static/css/main.99c0e03c.css",
+    "static/js/main.f80017c4.js"
   ]
 }
